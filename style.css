@@ -61,7 +61,7 @@ header {
 }
 
 .today-time {
-    width: 80%;
+    width: 50%;
     margin-top: 15px;
     font-size: 18px;
     background: rgba(255, 255, 255, 0.1);
@@ -74,8 +74,9 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-around;
-
-
+}
+hr{
+    border: 1px solid #d4af37;
 }
 .today-time span {
 

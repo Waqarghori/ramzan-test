@@ -135,13 +135,14 @@ table tr:nth-child(even) {
 
 
 @media (max-width: 768px) {
-    .countdown {
-        flex-direction: column;
-    }
+
     .time-box {
         min-width: 80%;
     }
     table {
         font-size: 14px;
+    }
+    .today-time {
+        width: 80%;
     }
 }

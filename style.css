@@ -47,18 +47,7 @@ header {
     border-radius: 15px;
     box-shadow: 0px 0px 10px rgba(255, 223, 0, 0.5);
 }
-.hero {
-    background: linear-gradient(135deg, #3a2a16, #d4af37);
-    padding: 20px;
-    color: white;
-    text-align: center;
-    font-size: 22px;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 90%;
-    box-shadow: 0px 0px 10px rgba(255, 223, 0, 0.5);
-}
+
 
 .today-time {
     width: 50%;
@@ -74,6 +63,9 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-around;
+}
+.container p {
+    font-size: 24px;
 }
 hr{
     border: 1px solid #d4af37;

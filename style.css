@@ -1,5 +1,9 @@
 *{
     font-weight: bold;
+    font-family: serif;
+}
+th{
+    font-size: 18px;
 }
 body {
     font-family: 'Noto Nastaliq Urdu', serif;
@@ -110,7 +114,11 @@ hr{
     overflow-x: auto;
     margin-top: 20px;
 }
-
+.ramzan-day{
+    font-size: 24px;
+    padding-bottom: 5px;
+    font-weight: bolder;
+}
 table {
     width: 100%;
     border-collapse: collapse;

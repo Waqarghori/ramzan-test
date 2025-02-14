@@ -112,3 +112,38 @@ table tr:nth-child(even) {
         font-size: 14px;
     }
 }
+
+
+.hero {
+    background: linear-gradient(135deg, #3a2a16, #d4af37);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    box-shadow: 0px 0px 10px rgba(255, 223, 0, 0.5);
+}
+
+.today-time {
+    margin-top: 15px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0px 0px 8px rgba(255, 223, 0, 0.5);
+}
+
+.today-time span {
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.highlight {
+    background-color: rgba(255, 223, 0, 0.5);
+    font-weight: bold;
+}
+

@@ -28,3 +28,36 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const today = new Date();
+    const formattedDate = today.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+
+    document.getElementById("current-date").textContent = formattedDate;
+
+    // Sehri & Iftar times list
+    const ramadanTimings = {
+        "13 Feb 2025": { sehri: "05:37 AM", iftar: "6:36 PM" },
+        "14 Feb 2025": { sehri: "05:36 AM", iftar: "6:36 PM" },
+        "15 Feb 2025": { sehri: "05:35 AM", iftar: "6:37 PM" },
+        "16 Feb 2025": { sehri: "05:34 AM", iftar: "6:37 PM" },
+        "17 Feb 2025": { sehri: "05:33 AM", iftar: "6:38 PM" }
+    };
+
+    if (ramadanTimings[formattedDate]) {
+        document.getElementById("sehri-time").textContent = ramadanTimings[formattedDate].sehri;
+        document.getElementById("iftar-time").textContent = ramadanTimings[formattedDate].iftar;
+
+        // Table highlighting
+        let rows = document.querySelectorAll("#ramadan-table tr");
+        rows.forEach(row => {
+            if (row.innerHTML.includes(formattedDate)) {
+                row.classList.add("highlight");
+            }
+        });
+    } else {
+        document.getElementById("sehri-time").textContent = "نامعلوم";
+        document.getElementById("iftar-time").textContent = "نامعلوم";
+    }
+});
+
